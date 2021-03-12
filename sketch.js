@@ -6,7 +6,7 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
-var bird, slingShot;
+var bird,sling1;
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
@@ -70,11 +70,11 @@ function draw(){
 
 
 function mouseDragged(){
-Matter.Body.setPosition(bird.body,{x:mouseX,y:mouseY})
+Matter.Body.setPosition(bird.body,{x:mouseX,y:mouseY});
 
 }
 function  mouseReleased(){
-    sling1.fly()
+    sling1.fly();
 }
 
 
